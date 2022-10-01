@@ -1,4 +1,4 @@
-# ToDo-FullStack-App
+# FullStack TODO App
 ToDo application for personal use, developed using PHP, Vue2, Bootstrap and MySQL.
 
 The application contains a login and registration feature, where through a PHP server user data is stored in a MySQL database. Specifically in the table `users` created using the command:
