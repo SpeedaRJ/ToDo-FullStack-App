@@ -1,0 +1,280 @@
+/* HTML tag CSS */
+/** Base page **/
+html, body {
+    background-color: #fefae0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: unset;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+/** Forms and Inputs **/
+label, input {
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"] {
+    color: black;
+    background-color: #D4A373;
+    border: 0;
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0.1rem black;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    color: #D4A373;
+    background-color: black;
+}
+
+input[type="text"], 
+input[type="password"]{
+    border-radius: 1rem;
+    border: 0;
+    box-shadow: 0.1rem 0.1rem black;
+    color: black;
+    background-color:#FEFAE0;
+    padding-left: 0.5rem;
+}
+
+input:focus {
+    outline: 0.2rem solid #D4A373;
+}
+
+/** Table **/
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+td {
+    padding: 1rem;
+}
+
+tr:first-child td:first-child {
+    border-top-left-radius: 1rem;
+}
+
+tr:first-child td:last-child {
+    border-top-right-radius: 1rem;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 1rem;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 1rem;
+}
+
+/** Modal CSS **/
+
+/* Custom Class CSS */
+/** Base page and Header **/
+.app-header {
+    background-color: #e7c8a0;
+    border-radius: 3rem;
+    box-shadow: 0.2rem 0.2rem black;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.title-div {
+    text-align: center;
+    color: black;
+    font-size: 1.1rem;
+    cursor: default;
+}
+
+.user-div {
+    margin: auto;
+    cursor: pointer;
+}
+
+.user-icon {
+    color: #e7c8a0;
+    background-color: black;
+    border-radius: 3rem;
+    box-shadow: 0.1rem 0.1rem black;
+    text-align: center;
+    min-width: 4rem;
+    max-width: 7rem;
+}
+
+.user-icon:hover {
+    background-color: #D4A373;
+    color: black;
+}
+
+.user-dropdown {
+    background-color: #CCD5AE;
+}
+
+.user-dropdown-option:hover {
+    background-color: #E9EDC9;
+}
+
+/** Modal CSS **/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    max-width: 22rem;
+    padding-bottom: 1rem;
+    background-color: #CCD5AE;
+}
+
+.close {
+    position: absolute;
+    right: 0.5rem;
+    top: 0;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: #D4A373;;
+}
+
+.button-div {
+    margin: 0.3rem;
+}
+
+.LS {
+    color: #F96666;
+}
+
+.NYR {
+    color: black;
+}
+
+.NYR:hover {
+    cursor: pointer;
+    color: #D4A373;
+}
+
+/** ToDo CSS **/
+.todo_container {
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1rem;
+}
+
+.todo_display {
+    background-color: #e7c8a0;
+    border-radius: 3rem;
+    padding: 1rem;
+    box-shadow: 0.2rem 0.2rem black;
+}
+
+.task-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.custom-button {
+    background-color: #CCD5AE;
+    border: 0;
+    box-shadow: 0.1rem 0.1rem black;
+    color: #FEFAE0;
+}
+
+.custom-button:hover {
+    background-color: #D4A373 !important;
+    color: black !important;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td {
+    background-color: #F4F4D5;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td {
+    background-color: #FAEDCD;
+}
+
+.table-striped>tbody>tr {
+    border-radius: 1rem;
+}
+
+.table-striped>tbody>tr>td,
+.table-striped>thead>tr>th {
+    border: none !important;
+}
+
+.custom-pagination>li>span {
+    color: black;
+    background-color: #F4F4D5 !important;
+    box-shadow: 0.1rem 0.1rem black;
+    border: 0 !important;
+}
+
+.custom-pagination>li>button {
+    color: black;
+    box-shadow: 0.1rem 0.1rem black;
+    border: 0;
+    background-color: #CCD5AE !important;
+}
+
+.custom-pagination>li>button:hover,
+.custom-pagination>li.active>button:hover {
+    color: #D4A373;
+    background-color: black !important;
+}
+
+.custom-pagination>li.active>button {
+    color: black;
+    box-shadow: 0.1rem 0.1rem black;
+    border: 0;
+}
+
+/* Custom id CSS */
+#todo-app {
+    height: 100vh;
+}
+
+#userDropDown {
+    background-color:inherit;
+    border: 0;
+    color: inherit;
+    padding: 0;
+}
+
+#completed-table>tbody>tr>td {
+    color:rgba(0, 0, 0, 0.75);
+}
+
+/* Media Query CSS */
+@media (min-width: 1200px) {
+    .title-div {
+        font-size: 2rem;
+    }
+
+    .user-icon {
+        font-size: 1.2rem;
+    }
+}
+
+
